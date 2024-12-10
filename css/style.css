@@ -20,22 +20,24 @@ main {
     background-image: url(../images/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-position: left 0 top 0;
-}
+    
+    div {
+        width: 1082px;
+        height: 527px;
+        border: 1px solid red;
+    
+    
+        div.cards {
+            width: 50%; 
+            background-image: url(../images/bg-card-front_full.png), url(../images/bg-card-back_full.png);
+            background-repeat: no-repeat;
+            background-position: left 0 top 0, right 0 bottom 0;
+        }
+    
+        form {
+            width: 50%;
+            flex-direction: column;
 
-div {
-    width: 1082px;
-    height: 527px;
-    border: 1px solid red;
-
-
-    div.cards {
-       width: 50%; 
-        background-image: url(../images/bg-card-front_full.png), url(../images/bg-card-back_full.png);
-        background-repeat: no-repeat;
-        background-position: left 0 top 0, right 0 bottom 0;
-    }
-
-    form {
-        width: 50%;
+        }
     }
 }
