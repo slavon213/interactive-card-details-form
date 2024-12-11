@@ -105,6 +105,7 @@ main {
 
                 input::placeholder {
                     font-family: var(--font);
+                    font-size: 18px;
                     color: inherit;
                     opacity: 0.25;
                 }
