@@ -38,32 +38,34 @@ main {
     div.container {
         width: 1082px;
         height: 527px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
 
         div.cards {
-            width: 50%;
+            flex-basis: 50%;
             height: 100%;
             background-image: url(../images/bg-card-front_full.png), url(../images/bg-card-back_full.png);
             background-repeat: no-repeat;
             background-position: left 0 top 0, right 0 bottom 0;
         }
         div.form {
-            width: 50%;
+            flex-basis: 50%;
             height: 100%;
 
             form {
                 max-width: 381px;
-                height: 352px;
-                border: 1px solid red;
+                /* border: 1px solid red; */
                 flex-direction: column;
                 align-items: stretch;
-                row-gap: 26px;
+                row-gap: 40px;
 
+                div.inputs {
+                    row-gap: 26px;
+                    
+                }
                 div.flx {
                     flex-direction: column;
                     align-items: stretch;
                 }
-
                 label {
                     font-size: 12px;
                     letter-spacing: 2px;
@@ -72,21 +74,23 @@ main {
                 }
                 div.card-secret {
                     display: flex;
+                    flex-direction: row;
+                    column-gap: 20px;
+                    /* justify-content: space-between; */
                     flex-basis: 50%;
-                    align-items: flex-start;
-                    /* flex-direction: column; */ /* flex-wrap: nowrap; */
-                    /* justify-content: space-between; */ /* column-gap: 20px; */
-                    
+
                     div.card-date {
                         flex-direction: column;
-                        /* input {
-                            width: 80px;
-                        } */
+
+                        div.two-inputs {
+                            display: flex;
+                            column-gap: 10px;
+                        }
                     }
 
                     div.card-cvc {
                         input {
-                            width: 100px;
+                            width: 100%;
                         }
                     }
                 }
@@ -107,7 +111,6 @@ main {
                 button {
                     width: 381px;
                     height: 53px;
-                    /* flex-shrink: 0; */
                     border-radius: 8px;
                     background: var(--Deep-Violet);
                     color: var(--White);
