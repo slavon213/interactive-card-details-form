@@ -63,36 +63,35 @@ main {
                     flex-direction: column;
                     align-items: stretch;
                 }
+
                 label {
                     font-size: 12px;
                     letter-spacing: 2px;
                     text-transform: uppercase;
                     margin-block-end: 9px;
                 }
+                
                 div.card-secret {
                     display: flex;
                     flex-direction: row;
                     column-gap: 20px;
-                    justify-content: space-between;
                     
-
+                    
                     div.card-date {
                         flex-direction: column;
-                        /* flex-basis: 50%; */
 
                         div.two-inputs {
                             display: flex;
                             column-gap: 10px;
-                            justify-content: stretch;
+                            
+                            input {
+                                width: 80px;
+                            }
                         }
                     }
 
                     div.card-cvc {
-                        flex-grow: 1
-                        ;
-                        input {
-                            width: 100%;
-                        }
+                     max-width: 191px;
                     }
                 }
 
