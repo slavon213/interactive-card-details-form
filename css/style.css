@@ -2,6 +2,7 @@
     --Deep-Violet: #21092f;
     --Light-Grey: #dfdee0;
     --White: #fff;
+    --font: "Space Grotesk", sans-serif;
 }
 
 * {
@@ -13,7 +14,7 @@
 html,
 body {
     height: 100vh;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font);
     font-optical-sizing: auto;
     font-weight: 500;
     color: var(--Deep-Violet);
@@ -70,20 +71,19 @@ main {
                     text-transform: uppercase;
                     margin-block-end: 9px;
                 }
-                
+
                 div.card-secret {
                     display: flex;
                     flex-direction: row;
                     column-gap: 20px;
-                    
-                    
+
                     div.card-date {
                         flex-direction: column;
 
                         div.two-inputs {
                             display: flex;
                             column-gap: 10px;
-                            
+
                             input {
                                 width: 80px;
                             }
@@ -91,7 +91,7 @@ main {
                     }
 
                     div.card-cvc {
-                     max-width: 191px;
+                        max-width: 191px;
                     }
                 }
 
@@ -100,10 +100,11 @@ main {
                     border: 1px solid var(--Light-Grey);
                     background: var(--White);
                     padding: 11px 16px;
+                    font-family: var(--font);
                 }
 
                 input::placeholder {
-                    font-family: inherit;
+                    font-family: var(--font);
                     color: inherit;
                     opacity: 0.25;
                 }
@@ -119,6 +120,7 @@ main {
                     background: var(--Deep-Violet);
                     color: var(--White);
                     font-weight: 500;
+                    font-family: inherit;
                 }
             }
         }
