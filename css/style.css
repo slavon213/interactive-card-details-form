@@ -38,7 +38,6 @@ main {
     div.container {
         width: 1082px;
         height: 527px;
-        /* border: 1px solid red; */
 
         div.cards {
             flex-basis: 50%;
@@ -53,14 +52,12 @@ main {
 
             form {
                 max-width: 381px;
-                /* border: 1px solid red; */
                 flex-direction: column;
                 align-items: stretch;
                 row-gap: 40px;
 
                 div.inputs {
                     row-gap: 26px;
-                    
                 }
                 div.flx {
                     flex-direction: column;
@@ -76,19 +73,23 @@ main {
                     display: flex;
                     flex-direction: row;
                     column-gap: 20px;
-                    /* justify-content: space-between; */
-                    flex-basis: 50%;
+                    justify-content: space-between;
+                    
 
                     div.card-date {
                         flex-direction: column;
+                        /* flex-basis: 50%; */
 
                         div.two-inputs {
                             display: flex;
                             column-gap: 10px;
+                            justify-content: stretch;
                         }
                     }
 
                     div.card-cvc {
+                        flex-grow: 1
+                        ;
                         input {
                             width: 100%;
                         }
@@ -108,12 +109,17 @@ main {
                     opacity: 0.25;
                 }
 
+                input[type="number"]::-webkit-inner-spin-button {
+                    appearance: none;
+                }
+
                 button {
                     width: 381px;
                     height: 53px;
                     border-radius: 8px;
                     background: var(--Deep-Violet);
                     color: var(--White);
+                    font-weight: 500;
                 }
             }
         }
