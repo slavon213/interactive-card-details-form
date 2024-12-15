@@ -101,7 +101,6 @@ main {
                     background: var(--White);
                     padding: 11px 16px;
                     font-family: var(--font);
-                    font-size: 18px;
 
                 }
 
@@ -128,4 +127,9 @@ main {
             }
         }
     }
+}
+
+input {
+    font-size: 18px;
+
 }
