@@ -101,7 +101,7 @@ main {
                     background: var(--White);
                     padding: 11px 16px;
                     font-family: var(--font);
-                    font-size: inherit;
+                    font-size: 18px;
 
                 }
 
